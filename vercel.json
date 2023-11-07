@@ -1,5 +1,5 @@
 {
-  
+  "version": 2,
   "builds": [
     { "src": "client", "use": "@vercel/static", "config": {"distDir": "build"} },
     { "src": "server.js", "use": "@vercel/node" }
