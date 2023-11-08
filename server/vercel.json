@@ -1,16 +1,28 @@
 {
     "version": 2,
     "builds": [
-     {
-      "src": "index.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
-     }
+      { "src": "index.js", "use": "@vercel/node" }
     ],
     "routes": [
-     {
-      "src": "/(.*)",
-      "dest": "index.js"
-     }
+      { "src": "/api/configs/(.*)", "dest": "index.js" },
+      { "src": "/api/customers/(.*)", "dest": "index.js" },
+      { "src": "/api/catalog/(.*)", "dest": "index.js" },
+      { "src": "/api/products/(.*)", "dest": "index.js" },
+      { "src": "/api/colors/(.*)", "dest": "index.js" },
+      { "src": "/api/sizes/(.*)", "dest": "index.js" },
+      { "src": "/api/filters/(.*)", "dest": "index.js" },
+      { "src": "/api/subscribers/(.*)", "dest": "index.js" },
+      { "src": "/api/cart/(.*)", "dest": "index.js" },
+      { "src": "/api/orders/(.*)", "dest": "index.js" },
+      { "src": "/api/links/(.*)", "dest": "index.js" },
+      { "src": "/api/pages/(.*)", "dest": "index.js" },
+      { "src": "/api/slides/(.*)", "dest": "index.js" },
+      { "src": "/api/wishlist/(.*)", "dest": "index.js" },
+      { "src": "/api/comments/(.*)", "dest": "index.js" },
+      { "src": "/api/shipping-methods/(.*)", "dest": "index.js" },
+      { "src": "/api/payment-methods/(.*)", "dest": "index.js" },
+      { "src": "/api/partners/(.*)", "dest": "index.js" },
+      { "src": "/(.*)", "dest": "index.js" }
     ]
-   }
+  }
+  
