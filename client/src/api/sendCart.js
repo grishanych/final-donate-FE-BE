@@ -19,7 +19,7 @@ export default function sendCart() {
   };
 
   axios
-    .post("http://test-nine-mu-32.vercel.app//api/cart", newCart)
+    .post("http://test-server-2-drab.vercel.app//api/cart", newCart)
     .then(newCart => {
       console.log(newCart);
     })

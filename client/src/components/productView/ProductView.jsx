@@ -41,7 +41,7 @@ function ProductView() {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-            "http://test-nine-mu-32.vercel.app//api/products/" + params.itemNo
+            "http://test-server-2-drab.vercel.app//api/products/" + params.itemNo
         );
         const data = await response.json();
         const rawDate = new Date(data.date);

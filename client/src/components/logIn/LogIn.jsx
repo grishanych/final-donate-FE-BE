@@ -47,7 +47,7 @@ function LogIn({ headline, toRegistration, toLogIn }){
   // in the process
   async function fetchUserDataFromServer() {
     try {
-      const response = await axios.get("http://test-nine-mu-32.vercel.app//api/customers/customer");
+      const response = await axios.get("http://test-server-2-drab.vercel.app//api/customers/customer");
       return response.data;
     } catch (err) {
       console.error("Помилка при отриманні даних:", err);
@@ -61,7 +61,7 @@ function LogIn({ headline, toRegistration, toLogIn }){
     }
 
     try {
-      const response = await axios.put("http://test-nine-mu-32.vercel.app//api/customers", updatedCustomer);
+      const response = await axios.put("http://test-server-2-drab.vercel.app//api/customers", updatedCustomer);
       return response.data.favorites;
     } catch (err) {
       console.error("Помилка при отриманні даних:", err);
